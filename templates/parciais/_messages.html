@@ -1,0 +1,8 @@
+{% if messages %}
+    <br> <!-- Para dar um espaçamento entre a linha de cima e a de baixo -->
+    {% for message in messages %}
+        <div class="alert {{ message.tags }}" role="alert">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
